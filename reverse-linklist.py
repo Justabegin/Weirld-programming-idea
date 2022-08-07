@@ -22,8 +22,12 @@ def changecontentoflinklistpointer(arraypointer,endpointer):
 newlinklistpointer = changecontentoflinklistpointer(linklistpointer,endpointer)
 print(endpointer)
 print(newlinklistpointer)
-newlinklistpointerfinal = findfinal(newlinklistpointer,endpointer)
-print(newlinklistpointerfinal)
+def printlinklist(linklist,linklistpointer,startpointer):
+    length = len(linklist) 
+    for i in range(length):
+        print(linklist[startpointer])
+        startpointer = linklistpointer[startpointer]
+printlinklist(linklist,newlinklistpointer,endpointer)
 
 
 
